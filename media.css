@@ -1,0 +1,49 @@
+@media(max-width: 1024px) {
+    .center {
+        /*padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);  */
+        padding-left: 8.33%;
+        padding-right: 8.33%;
+    }
+
+    /*.mobile_no {
+        display: none; */
+}
+
+.promo {
+    gap: 39px;
+}
+
+.promo-title {
+    font-size: 44px;
+    line-height: 53px;
+}
+
+.promo-heading {
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+/*.center {
+        justify-content: center;
+    }*/
+
+.card {
+    justify-content: center;
+    grid-template-columns: repeat(3, 231px);
+    grid-template-rows: 167px 116px;
+    gap: 20px;
+    margin-bottom: 110px;
+}
+
+.card-box-headding {
+    gap: 3.3px;
+    margin-bottom: 73px;
+}
+
+.cards {
+    grid-template-columns: repeat(2, 360px);
+    gap: 16px;
+    margin-bottom: 33px;
+}
+}
