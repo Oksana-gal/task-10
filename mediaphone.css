@@ -45,16 +45,13 @@
 
     }
 
-    .card__item.card__item_big {
-        width: 200%;
-    }
-
     .card__phone_none {
         display: none;
     }
 
     .card__phone {
         display: inherit;
+        /*display: inline-block;*/
     }
 
     .card-box-headding {
@@ -67,6 +64,85 @@
     }
 
     .cards-bottom-button {
+        padding-top: 40px;
         padding-bottom: 96px;
+
+    }
+
+    .information {
+        padding: 48px 0 64px 0;
+        gap: 46px;
+    }
+
+
+    .information-card {
+        width: 347px;
+        height: 129px;
+        padding: 0 24px;
+    }
+
+    .bottom {
+        height: 550px;
+        background-image: url("./img/background_phone.png");
+    }
+
+    .reservation {
+        padding-top: 64px;
+        padding-bottom: 110.1px;
+        gap: 59px;
+    }
+
+    .reservation-card {
+        width: 343px;
+        height: 194px;
+        gap: 30px;
+    }
+
+    #reservation-card-2 {
+        height: 123px;
+        gap: 22px;
+    }
+
+    figure img {
+        width: 91px;
+    }
+
+    figure h3 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #222224;
+    }
+
+    .reservation-card h2 {
+        line-height: 153.2%;
+    }
+
+    .reservation-card h2 span {
+        font-size: 14px;
+        line-height: 21.45px;
+    }
+
+    .input-enter-email {
+        width: 245px;
+        height: 46px;
+    }
+
+    .reservation-btn {
+        height: 46px;
+    }
+
+    .footer {
+        padding-top: 34px;
+        height: 143px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+
+    }
+
+    .footer-center {
+        width: 0;
     }
 }

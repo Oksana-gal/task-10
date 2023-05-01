@@ -8,42 +8,106 @@
 
     /*.mobile_no {
         display: none; */
-}
 
-.promo {
-    gap: 39px;
-}
 
-.promo-title {
-    font-size: 44px;
-    line-height: 53px;
-}
+    .promo {
+        gap: 39px;
+    }
 
-.promo-heading {
-    font-size: 24px;
-    line-height: 28.8px;
-}
+    .promo-title {
+        font-size: 44px;
+        line-height: 53px;
+    }
 
-/*.center {
+    .promo-heading {
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+
+    .card {
         justify-content: center;
-    }*/
+        grid-template-columns: repeat(3, 231px);
+        grid-template-rows: 167px 116px;
+        gap: 20px;
+        margin-bottom: 110px;
+    }
 
-.card {
-    justify-content: center;
-    grid-template-columns: repeat(3, 231px);
-    grid-template-rows: 167px 116px;
-    gap: 20px;
-    margin-bottom: 110px;
-}
+    .card-box-headding {
+        gap: 3.3px;
+        margin-bottom: 73px;
+    }
 
-.card-box-headding {
-    gap: 3.3px;
-    margin-bottom: 73px;
-}
+    .card-box-content {
+        grid-template-columns: repeat(2, 360px);
 
-.cards {
-    grid-template-columns: repeat(2, 360px);
-    gap: 16px;
-    margin-bottom: 33px;
-}
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 360px);
+        gap: 16px;
+        margin-bottom: 33px;
+    }
+
+    .card-bottom-button {
+        padding-bottom: 64.5px;
+    }
+
+
+    .information {
+        padding: 48px 0 64px 0;
+        display: flex;
+        /* grid-template-columns: repeat(3, 360px); */
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .information-card {
+        width: 360px;
+    }
+
+    .bottom {
+        height: 693px;
+        background-image: url("./img/background_tablet.png");
+
+    }
+
+    .reservation {
+        padding-top: 64px;
+        padding-bottom: 219px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 48px;
+
+    }
+
+    #reservation-card-2 {
+        width: 360px;
+        height: 137px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 27px;
+    }
+
+    .reservation-card h2 {
+        line-height: 162%;
+    }
+
+    .reservation-card h2 span {
+        line-height: 38.88px;
+    }
+
+    .footer {
+        height: 79px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #222224;
+    }
+
+    .footer-center {
+        width: 305px;
+    }
 }
