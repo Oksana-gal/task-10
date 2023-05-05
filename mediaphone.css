@@ -40,6 +40,7 @@
         margin-bottom: 96px;
     }
 
+
     .card__item {
         width: 343px;
 
@@ -83,7 +84,7 @@
 
     .bottom {
         height: 550px;
-        background-image: url("./img/background_phone.png");
+        background-image: url("./img/mob photo subscribe.png")
     }
 
     .reservation {
