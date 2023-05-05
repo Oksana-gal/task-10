@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media(max-width: 768px) {
     .center {
         /* padding-left: calc(50% - 171px);
@@ -11,6 +18,8 @@
     }
 
     .promo {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         gap: 0px;
         padding: 148px 0;
@@ -31,10 +40,20 @@
     }
 
     .card {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         gap: 32px;
         margin-bottom: 96px;
@@ -60,6 +79,7 @@
     }
 
     .card-box-content {
+        -ms-grid-columns: (359px)[1];
         grid-template-columns: repeat(1, 359px);
         margin-bottom: 41px;
     }
@@ -137,8 +157,14 @@
     .footer {
         padding-top: 34px;
         height: 143px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
 
     }

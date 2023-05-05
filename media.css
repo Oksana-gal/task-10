@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media(max-width: 1024px) {
     .center {
         /*padding-left: calc(50% - 368px);
@@ -25,11 +32,45 @@
     }
 
     .card {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -ms-grid-columns: 231px 20px 231px 20px 231px;
         grid-template-columns: repeat(3, 231px);
+        -ms-grid-rows: 167px 20px 116px;
         grid-template-rows: 167px 116px;
         gap: 20px;
         margin-bottom: 110px;
+    }
+
+    .card>*:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .card>*:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .card>*:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 5;
+    }
+
+    .card>*:nth-child(4) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .card>*:nth-child(5) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+
+    .card>*:nth-child(6) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 5;
     }
 
     .card-box-headding {
@@ -38,11 +79,13 @@
     }
 
     .card-box-content {
+        -ms-grid-columns: (360px)[2];
         grid-template-columns: repeat(2, 360px);
 
     }
 
     .cards {
+        -ms-grid-columns: 360px 16px 360px;
         grid-template-columns: repeat(2, 360px);
         gap: 16px;
         margin-bottom: 33px;
@@ -55,9 +98,16 @@
 
     .information {
         padding: 48px 0 64px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         /* grid-template-columns: repeat(3, 360px); */
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 48px;
     }
@@ -74,7 +124,11 @@
     .reservation {
         padding-top: 64px;
         padding-bottom: 219px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         gap: 48px;
 
@@ -83,9 +137,18 @@
     #reservation-card-2 {
         width: 360px;
         height: 137px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         gap: 27px;
     }
@@ -100,8 +163,14 @@
 
     .footer {
         height: 79px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         background: #222224;
     }
